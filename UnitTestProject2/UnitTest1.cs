@@ -62,10 +62,12 @@ namespace UnitTestProject2
         [TestMethod]
         public void NextPalindrome_AreEqual()
         {
+            //Expected Result
             int Expresult = 121;
-           
 
-            int input = Palindrome.NextPal();
+            int nr = 100;
+
+            string input = Palindrome.NextPal(nr);
 
 
             Assert.AreEqual(Expresult, input);
@@ -76,9 +78,9 @@ namespace UnitTestProject2
         {
             int Expresult = 121;
 
+            int nr = 121;
 
-            int input = Palindrome.NextPal();
-
+            string input = Palindrome.NextPal(nr);
 
             Assert.AreNotEqual(Expresult, input);
         }

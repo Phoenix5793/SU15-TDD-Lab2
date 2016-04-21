@@ -37,7 +37,6 @@ namespace TestUppgifter_2
             {
                 correctString = "Word";
             }
-​
             return correctString;
         }
     }
