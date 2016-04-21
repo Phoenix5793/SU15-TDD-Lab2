@@ -68,8 +68,6 @@ namespace UnitTestProject2
             int input = Palindrome.NextPal();
 
 
-
-
             Assert.AreEqual(Expresult, input);
         }
 
