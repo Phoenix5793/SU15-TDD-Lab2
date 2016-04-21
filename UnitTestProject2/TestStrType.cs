@@ -33,7 +33,7 @@ namespace UnitTestProject2
 		public void Test__Is_String__Single_Word()
 		{
 			string input = "ghjgjhgjkgk";
-			string expected = "string";
+			string expected = "word";
 
 			string result = StringUtils.StrType(input);
 
@@ -41,10 +41,10 @@ namespace UnitTestProject2
 		}
 
 		[TestMethod]
-		public void Test__Is_String__Many_Words()
+		public void Test__Is_None__Many_Words()
 		{
 			string input = "Apa blåbär cykelpump";
-			string expected = "string";
+			string expected = "none";
 
 			string result = StringUtils.StrType(input);
 
@@ -52,7 +52,7 @@ namespace UnitTestProject2
 		}
 
 		[TestMethod]
-		public void Test__Is_None()
+		public void Test__Is_None__Mixed_Digits_Letters()
 		{
 			string input = "12141hlhbsg";
 			string expected = "none";
