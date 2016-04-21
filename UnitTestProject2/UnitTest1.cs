@@ -93,7 +93,7 @@ namespace UnitTestProject2
                 5, 7, 11
             };
 
-            int[] Input = new int[];
+            int[] Input = new int[3];
 
             Input = PrimeHandler.NextPrime();
 
