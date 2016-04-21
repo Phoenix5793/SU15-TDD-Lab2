@@ -26,7 +26,7 @@ namespace UnitTestProject2
 
 			int[] result = StringUtils.NextPrime(input);
 
-			Assert.AreEqual(expected, result);
+			CollectionAssert.AreEqual(expected, result);
 		}
 	}
 }
