@@ -61,33 +61,25 @@ namespace UnitTestProject2
         [TestMethod]
         public void NextPalindrome_AreEqual()
         {
-            int[] result = new int[]
-            {
-                1, 2, 3
-            };
+            int Expresult = 121;
 
-            int[] input = new int[]
-            {
-                Palindrome.NextPal()
-            }; 
 
-            Assert.AreEqual(result, input);
+            int input = Palindrome.NextPal();
+
+
+            Assert.AreEqual(Expresult, input);
         }
 
         [TestMethod]
         public void NextPalindrome_AreNotEqual()
         {
-            int[] result = new int[]
-            {
-                1, 2, 3
-            };
+            int Expresult = 121;
 
-            int[] input = new int[]
-            {
-                Palindrome.NextPal()
-            };
 
-            Assert.AreNotEqual(result, input);
+            int input = Palindrome.NextPal();
+
+
+            Assert.AreNotEqual(Expresult, input);
         }
 
         [TestMethod]
