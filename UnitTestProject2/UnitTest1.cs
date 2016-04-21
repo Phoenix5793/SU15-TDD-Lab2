@@ -63,9 +63,9 @@ namespace UnitTestProject2
         public void NextPalindrome_AreEqual()
         {
             //Expected Result
-            int Expresult = 121;
+            string Expresult = "121";
 
-            int nr = 100;
+            int nr = 120;
 
             string input = Palindrome.NextPal(nr);
 
@@ -76,7 +76,7 @@ namespace UnitTestProject2
         [TestMethod]
         public void NextPalindrome_AreNotEqual()
         {
-            int Expresult = 121;
+            string Expresult = "121";
 
             int nr = 121;
 
@@ -88,16 +88,16 @@ namespace UnitTestProject2
         [TestMethod]
         public void NextPrime_AreEqual()
         {
-            int[] ExpResult = new int[]
+            int[] expResult = new int[]
             {
                 5, 7, 11
             };
 
-            int[] Input = new int[3];
+            int nr = 3;
 
-            Input = PrimeHandler.NextPrime();
+            int[] input = PrimeHandler.NextPrime(nr);
 
-            Assert.AreEqual(ExpResult,Input);
+            CollectionAssert.AreEqual(expResult,input);
 
 
         }
@@ -105,16 +105,17 @@ namespace UnitTestProject2
         [TestMethod]
         public void NextPrime_AreNotEqual()
         {
-            int[] ExpResult = new int[]
+            int[] expResult = new int[]
             {
                 5, 7, 11
             };
 
-            int[] Input = new int[3];
+            int nr = 5;
+            
 
-            Input = PrimeHandler.NextPrime();
+           int[] input =  PrimeHandler.NextPrime(nr);
 
-            Assert.AreNotEqual(ExpResult, Input);
+            CollectionAssert.AreNotEqual(expResult, input);
         }
 
     }
