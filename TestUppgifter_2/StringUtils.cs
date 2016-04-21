@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace TestUppgifter_2
 {
@@ -31,9 +28,17 @@ namespace TestUppgifter_2
 
 		public static string NextPalindrome(int input)
 		{
-			return string.Empty;
-		}
+			string number = input.ToString();
 
+			if (number.Length != 3)
+			{
+				return "error";
+			}
+
+			char[] charArray = number.ToCharArray().Reverse().ToArray();
+
+			return new string(charArray);
+		}
 
 		public static int[] NextPrime(int input)
 		{
