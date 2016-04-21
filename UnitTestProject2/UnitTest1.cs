@@ -85,16 +85,17 @@ namespace UnitTestProject2
         [TestMethod]
         public void NextPrime_AreEqual()
         {
-            int[] ExpResult = new int[]
+            int[] expResult = new int[]
             {
                 5, 7, 11
             };
 
-            int[] Input = new int[3];
+            int nr = 3;
 
-            Input = PrimeHandler.NextPrime();
 
-            Assert.AreEqual(ExpResult,Input);
+            int[] input = PrimeHandler.NextPrime(nr);
+
+            CollectionAssert.AreEqual(expResult, input);
 
 
         }
@@ -102,16 +103,17 @@ namespace UnitTestProject2
         [TestMethod]
         public void NextPrime_AreNotEqual()
         {
-            int[] ExpResult = new int[]
+            int[] expResult = new int[]
             {
                 5, 7, 11
             };
 
-            int[] Input = new int[3];
+            int nr = 5;
 
-            Input = PrimeHandler.NextPrime();
 
-            Assert.AreNotEqual(ExpResult, Input);
+            int[] input = PrimeHandler.NextPrime(nr);
+
+            CollectionAssert.AreNotEqual(expResult, input);
         }
 
     }
