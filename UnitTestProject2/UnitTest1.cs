@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using TestUppgifter_2;
 
 namespace UnitTestProject2
 {
@@ -11,7 +12,7 @@ namespace UnitTestProject2
         {
             int result = 7;
 
-            int input = StrCounter.Counter();
+            int input = StrCounter.Counter("metoden");
 
 
             Assert.AreEqual(result,input);
@@ -22,7 +23,7 @@ namespace UnitTestProject2
         {
             int result = 7;
 
-            int input = StrCounter.Counter();
+            int input = StrCounter.Counter("hejsan");
 
 
             Assert.AreNotEqual(result, input);
