@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using TestUppgifter_2;
 
 namespace UnitTestProject2
 {
@@ -12,7 +13,7 @@ namespace UnitTestProject2
 			int input = 123;
 			string expected = "321";
 
-			string result = NextPalindrome(input);
+			string result = StringUtils.NextPalindrome(input);
 
 			Assert.AreEqual(expected, result);
 		}
@@ -23,7 +24,7 @@ namespace UnitTestProject2
 			int input = 1234;
 			string expected = "error";
 
-			string result = NextPalindrome(input);
+			string result = StringUtils.NextPalindrome(input);
 
 			Assert.AreEqual(expected, result);
 		}
@@ -34,7 +35,7 @@ namespace UnitTestProject2
 			int input = 5;
 			string expected = "error";
 
-			string result = NextPalindrome(input);
+			string result = StringUtils.NextPalindrome(input);
 
 			Assert.AreEqual(expected, result);
 		}

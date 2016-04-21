@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using TestUppgifter_2;
 
 namespace UnitTestProject2
 {
@@ -12,7 +13,7 @@ namespace UnitTestProject2
 			int input = 42;
 			int expected = 3;
 
-			int[] result = NextPrime(input);
+			int[] result = StringUtils.NextPrime(input);
 
 			Assert.AreEqual(expected, result.Length);
 		}
@@ -23,7 +24,7 @@ namespace UnitTestProject2
 			int input = 42;
 			int[] expected = {43, 47, 53};
 
-			int[] result = NextPrime(input);
+			int[] result = StringUtils.NextPrime(input);
 
 			Assert.AreEqual(expected, result);
 		}

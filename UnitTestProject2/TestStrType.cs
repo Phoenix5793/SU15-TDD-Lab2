@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using TestUppgifter_2;
 
 namespace UnitTestProject2
 {
@@ -12,7 +13,7 @@ namespace UnitTestProject2
 			string input = "1";
 			string expected = "number";
 
-			string result = StrType(input);
+			string result = StringUtils.StrType(input);
 
 			Assert.AreEqual(expected, result);
 		}
@@ -23,7 +24,7 @@ namespace UnitTestProject2
 			string input = "457476";
 			string expected = "number";
 
-			string result = StrType(input);
+			string result = StringUtils.StrType(input);
 
 			Assert.AreEqual(expected, result);
 		}
@@ -34,7 +35,7 @@ namespace UnitTestProject2
 			string input = "ghjgjhgjkgk";
 			string expected = "string";
 
-			string result = StrType(input);
+			string result = StringUtils.StrType(input);
 
 			Assert.AreEqual(expected, result);
 		}
@@ -45,7 +46,7 @@ namespace UnitTestProject2
 			string input = "Apa blåbär cykelpump";
 			string expected = "string";
 
-			string result = StrType(input);
+			string result = StringUtils.StrType(input);
 
 			Assert.AreEqual(expected, result);
 		}
@@ -56,7 +57,7 @@ namespace UnitTestProject2
 			string input = "12141hlhbsg";
 			string expected = "none";
 
-			string result = StrType(input);
+			string result = StringUtils.StrType(input);
 
 			Assert.AreEqual(expected, result);
 		}
@@ -67,7 +68,7 @@ namespace UnitTestProject2
 			string input = "1234214%34241";
 			string expected = "none";
 
-			string result = StrType(input);
+			string result = StringUtils.StrType(input);
 
 			Assert.AreEqual(expected, result);
 		}
@@ -78,7 +79,7 @@ namespace UnitTestProject2
 			string input = string.Empty;
 			string expected = "none";
 
-			string result = StrType(input);
+			string result = StringUtils.StrType(input);
 
 			Assert.AreEqual(expected, result);
 		}

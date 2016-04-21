@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using TestUppgifter_2;
 
 namespace UnitTestProject2
 {
@@ -12,7 +13,7 @@ namespace UnitTestProject2
 			string input = "1234567";
 			int expected = 7;
 
-			int result = StrCount(input);
+			int result = StringUtils.StrCount(input);
 
 			Assert.AreEqual(expected, result);
 		}
@@ -23,7 +24,7 @@ namespace UnitTestProject2
 			string input = string.Empty;
 			int expected = 0;
 
-			int result = StrCount(input);
+			int result = StringUtils.StrCount(input);
 
 			Assert.AreEqual(expected, result);
 		}
