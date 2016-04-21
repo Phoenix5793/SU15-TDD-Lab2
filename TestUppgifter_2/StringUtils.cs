@@ -23,7 +23,7 @@ namespace TestUppgifter_2
 
 			if (Regex.IsMatch(input, $"^[a-zA-Z]+$"))
 			{
-				return "string";
+				return "word";
 			}
 
 			return "none";
