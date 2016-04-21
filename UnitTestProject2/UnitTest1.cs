@@ -80,7 +80,7 @@ namespace UnitTestProject2
             int input = Palindrome.NextPal();
 
 
-            Assert.AreEqual(Expresult, input);
+            Assert.AreNotEqual(Expresult, input);
         }
 
         [TestMethod]
