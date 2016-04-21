@@ -33,7 +33,7 @@ namespace UnitTestProject2
         {
             string result = "Word";
 
-            string input = StrExaminer.Examin();
+            string input = StrExaminer.Examin("Hejsan");
 
             Assert.AreEqual(result,input);
         }
@@ -41,11 +41,21 @@ namespace UnitTestProject2
         [TestMethod]
         public void StrType_AreNotEqual()
         {
-            string result = "Word";
+            string result = "None";
 
-            string input = StrExaminer.Examin();
+            string input = StrExaminer.Examin("4539");
 
             Assert.AreNotEqual(result, input);
+        }
+
+        [TestMethod]
+        public void StrType_AreEqual_2()
+        {
+            string result = "Number";
+
+            string input = StrExaminer.Examin("4539");
+
+            Assert.AreEqual(result, input);
         }
 
         [TestMethod]
