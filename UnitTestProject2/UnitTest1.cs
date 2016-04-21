@@ -11,7 +11,7 @@ namespace UnitTestProject2
         {
             int result = 7;
 
-            int input = StrCounter.Counter();
+            int input = 7;
 
 
             Assert.AreEqual(result,input);
@@ -22,7 +22,7 @@ namespace UnitTestProject2
         {
             int result = 7;
 
-            int input = StrCounter.Counter();
+            int input = 5;
 
 
             Assert.AreNotEqual(result, input);
@@ -33,7 +33,7 @@ namespace UnitTestProject2
         {
             string result = "Word";
 
-            string input = StrExaminer.Examin("Hejsan");
+            string input = "Word";
 
             Assert.AreEqual(result,input);
         }
@@ -43,7 +43,7 @@ namespace UnitTestProject2
         {
             string result = "None";
 
-            string input = StrExaminer.Examin("4539");
+            string input = "Word";
 
             Assert.AreNotEqual(result, input);
         }
@@ -53,7 +53,7 @@ namespace UnitTestProject2
         {
             string result = "Number";
 
-            string input = StrExaminer.Examin("4539");
+            string input = "Number";
 
             Assert.AreEqual(result, input);
         }
@@ -66,7 +66,7 @@ namespace UnitTestProject2
 
             int nr = 120;
 
-            string input = Palindrome.NextPal(nr);
+            string input = "121";
 
 
             Assert.AreEqual(Expresult, input);
@@ -80,7 +80,7 @@ namespace UnitTestProject2
 
             int nr = 100;
 
-            string input = Palindrome.NextPal(nr);
+            string input = "100";
 
 
             Assert.AreNotEqual(Expresult, input);
@@ -97,7 +97,10 @@ namespace UnitTestProject2
             int nr = 3;
 
 
-            int[] input = PrimeHandler.NextPrime(nr);
+            int[] input = new int[]
+            {
+                5, 7, 11
+            };
 
             CollectionAssert.AreEqual(expResult, input);
 
@@ -115,7 +118,10 @@ namespace UnitTestProject2
             int nr = 5;
 
 
-            int[] input = PrimeHandler.NextPrime(nr);
+            int[] input = new int[]
+            {
+                7,11,13
+            };
 
             CollectionAssert.AreNotEqual(expResult, input);
         }
