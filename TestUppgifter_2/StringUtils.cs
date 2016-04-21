@@ -10,7 +10,7 @@ namespace TestUppgifter_2
 	{
 		public static int StrCount(string input)
 		{
-			return 0;
+			return input.Length;
 		}
 
 		public static string StrType(string input)
